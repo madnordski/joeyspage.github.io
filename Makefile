@@ -1,3 +1,6 @@
+
+.PHONY: whatlocks push init
+
 push:
 	@git rev-parse --is-inside-work-tree >/dev/null
 	git add -A
@@ -9,8 +12,6 @@ init:
 	git init
 	git branch -M main
 	-git remote add origin git@github.com:madnordski/joeyspage.github.io.git
-
-.PHONY: whatlocks
 
 whatlocks:
 	@if [ -d .git ]; then \
