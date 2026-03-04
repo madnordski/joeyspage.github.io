@@ -14,10 +14,14 @@ init:
 
 whatlocks:
 	@if [ -d .git ]; then \
-		git ls-files -m | sed 's/^/file: /; s/$$/ locked by: modified/'; \
-		git diff --name-only --cached | sed 's/^/file: /; s/$$/ locked by: staged/'; \
-		if git rev-parse --verify HEAD@{upstream} >/dev/null 2>&1; then \
-			git diff --name-only HEAD@{upstream}..HEAD | sed 's/^/file: /; s/$$/ locked by: committed/'; \
+		git ls-files -m \
+			| sed 's/^/file: /; s/$$/ locked by: modified/'; \
+		git diff --name-only --cached \
+			| sed 's/^/file: /; s/$$/ locked by: staged/'; \
+		if git rev-parse --verify HEAD@{upstream} >/dev/null 2>&1; \
+		then \
+			git diff --name-only HEAD@{upstream}..HEAD \
+			| sed 's/^/file: /; s/$$/ locked by: committed/'; \
 		fi \
 	else \
 		echo "Not a git repository"; \
