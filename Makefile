@@ -18,11 +18,11 @@ whatlocks:
 		git ls-files -m \
 			| sed 's/^/file: /; s/$$/ locked by: modified/'; \
 		git diff --name-only --cached \
-			| sed 's/^/file: /; s/$$/ locked by: staged/'; \
+			| sed 's/^/file: /; s/$$/ git status: staged/'; \
 		if git rev-parse --verify HEAD@{upstream} >/dev/null 2>&1; \
 		then \
 			git diff --name-only HEAD@{upstream}..HEAD \
-			| sed 's/^/file: /; s/$$/ locked by: committed/'; \
+			| sed 's/^/file: /; s/$$/ git status: committed/'; \
 		fi \
 	else \
 		echo "Not a git repository"; \
