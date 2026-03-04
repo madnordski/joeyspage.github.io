@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Train Movies</title>
+
+<script language=JavaScript>
+var file = new Array();
+
+file[0] = "movies/ice_house.mov";
+file[1] = "movies/milk_car.mov";
+file[2] = "movies/pipe_company.mov";
+file[3] = "movies/SawMill.mov";
+
+path = "http://iris/jking/jking/trains/Inventory24Jun2005/";
+
+</script>
+</head>
+<body>
+
+<object width="640" height="496" name=movie
+  classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" 
+  codebase="http://www.apple.com/qtactivex/qtplugin.cab">
+  <param name="src" value="movies/milk_car.mov">
+  <param name="controller" value="true">
+  <param name="autoplay" value="true">
+  <param name="scale" value="ASPECT">
+  <param name="QTNEXT1" value="<http://iris/jking/jking/trains/Inventory24Jun2005/movies/ice_house.mov> T<myself>">
+  <param name="QTNEXT2" value="<http://iris/jking/jking/trains/Inventory24Jun2005/movies/pipe_company.mov> T<myself>">
+  <param name="QTNEXT3" value="<http://iris/jking/jking/trains/Inventory24Jun2005/movies/SawMill.mov> T<myself>">
+
+</object>
+<p>
+<form>
+ <input type=button Name="Again" value="Again"
+        onclick="self.location.reload();">
+ <input type=button Name="Close" value="Close"
+        onclick="self.close();">
+</form>
+</body>
+</html>

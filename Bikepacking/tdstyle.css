@@ -1,0 +1,36 @@
+body {
+    font-family: verdana;
+    font-size: 110%; }
+font.fancy {
+    font-size: 300%;
+    font-family: Comic Sans MS; }
+
+@media screen {
+    td.info { 
+        font-family: Verdana;
+        color: blue;
+        background-color: darkgrey;
+    }
+    p.info { background-color: darkgrey; color: whitesmoke;}
+}
+@media print {
+    td.info { 
+        display: none;
+	visibility: hidden;
+    }
+    p.info {
+        display: none;
+	visibility: hidden;
+    }
+    .page-break {
+	display: none;
+    }
+}
+
+@media print {
+    .noprint {display:none;}
+    .page-break {
+	display: block;
+	page-break-before: always;
+    }
+}

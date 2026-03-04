@@ -1,0 +1,43 @@
+/* Train Inventory Style Sheet,
+   copyright 2005, all rights reserved */
+
+.item TD
+{
+	Color:			#FFFFFF;
+	Background-Color:	#000000;
+	Border-Left:		#E10000 thin solid;
+	Border-Top:		#E10000 thin dashed;
+	Border-Right:		#E10000 thin solid;
+	Border-Bottom:		#E10000 thin dashed;
+	Text-Align:		left;
+	Font-Weight:		bold;
+	Padding-Right:		5px;
+	Padding-Left:		5px;
+	Padding-Top:		5px;
+	Padding-Bottom:		5px;
+}
+.item TH
+{
+	Color:			#FFFFFF;
+	Background-Color:	#000000;
+	Border-Left:		#E10000 thin solid;
+	Border-Top:		#E10000 thin solid;
+	Border-Right:		#E10000 thin solid;
+	Border-Bottom:		#E10000 thin solid;
+	Text-Align:		center;
+	Font-Weight:		bold;
+	Padding-Right:		0px;
+	Padding-Left:		0px;
+}
+
+.item A
+{
+	Color:			#1E9292;
+}
+
+.item A:hover
+{
+	Color:			#000000;
+	Background-Color:       #1E9292;
+}
+

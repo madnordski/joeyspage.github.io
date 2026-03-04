@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0; background-color: black;}
+.mySlides {display: none}
+
+img {
+    vertical-align: middle;
+    height: auto;
+    max-width: 100%;
+    max-height: 768px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 22px;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-shadow: 2px 2px black;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #fff;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade" align="center">
+            <div class="numbertext">1</div>
+            <img src="td19d01n2.jpg">
+            <div class="text"><b><b>The first few miles were glorious</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">3</div>
+            <img src="td19d02n1.jpg">
+            <div class="text"><b><b>The Crossing Creek trail to Koko
+      Claims.  Photo courtesy of John Schilling</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">5</div>
+            <img src="td19d04n2.jpg">
+            <div class="text"><b><b>Looking toward Glacier National
+  Park before the climb over Red Meadow Pass.</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">7</div>
+            <img src="td19d05n1.jpg">
+            <div class="text"><b><b>Very happy to have caught up to
+  Larry and Mikki for second breakfast.</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">8</div>
+            <img src="td19d05n2.jpg">
+            <div class="text"><b><b>The route slices through a
+  campground next to a river which provided this nice spot for my
+  daily picnic.  An avocado and a banana made for a pretty good
+  lunch but I also had tortilla chips from Echo Lake Cafe.</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">9</div>
+            <img src="td19d05n3.jpg">
+            <div class="text"><b><b>The view from Holland Lake Lodge</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">11</div>
+            <img src="td19d06n3.jpg">
+            <div class="text"><b><b>Mikki exits a section of single track on the way to
+    Richmond Pass</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">12</div>
+            <img src="td19d06n4.jpg">
+            <div class="text"><b><b>Larry at the top of Richmond Pass</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">13</div>
+            <img src="td19d08n3.jpg">
+            <div class="text"><b><b>Water or Snickers, what will it be</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">14</div>
+            <img src="td19d08larry_mikki.jpg">
+            <div class="text"><b><b>Happy arrival in Butte</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">15</div>
+            <img src="td19d10js2.jpg">
+            <div class="text"><b><b>John captures a photo of the two us</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">16</div>
+            <img src="td19d10js1.jpg">
+            <div class="text"><b><b>Left to right, the author, Bill and Mark</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">17</div>
+            <img src="td19d10n2.jpg">
+            <div class="text"><b><b>Left to right, Sam, Mikki, Jorgen, Larry and Bill</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">18</div>
+            <img src="td19d10n3.jpg">
+            <div class="text"><b><b>Jorgen seen here near the high point of the day's
+    ride</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">19</div>
+            <img src="td19d10n4.jpg">
+            <div class="text"><b><b>Mikki's bike provides contrast for the rust orange
+    lichen growing on the rocks</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">20</div>
+            <img src="td19d10js3.jpg">
+            <div class="text"><b><b>Sam passing our group</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">21</div>
+            <img src="td19d10n5.jpg">
+            <div class="text"><b><b>Sam and Mikki</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">22</div>
+            <img src="td19d11mc2.jpg">
+            <div class="text"><b><b>Snack time alongside the grass and shrub of treeless
+    pastures</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">23</div>
+            <img src="td19d11n3.jpg">
+            <div class="text"><b><b>Two women heading north on the route</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">24</div>
+            <img src="td19d11mc3.jpg">
+            <div class="text"><b><b>Mark and Bill at Red Rock Pass</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">25</div>
+            <img src="td19d11bc2.jpg">
+            <div class="text"><b><b>Bill at Red Rock Pass</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">26</div>
+            <img src="td19d11n6.jpg">
+            <div class="text"><b><b>Happy the steep climb was over</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">27</div>
+            <img src="td19d11n7.jpg">
+            <div class="text"><b><b>Mikki and Larry top Red Rock Pass</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">28</div>
+            <img src="td19d11n5.jpg">
+            <div class="text"><b><b>Idaho Welcomed the Tour Divide</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">29</div>
+            <img src="td19d11n4.jpg">
+            <div class="text"><b><b>Lots of open grass and shrub, no bears here</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">30</div>
+            <img src="td19d12n1.jpg">
+            <div class="text"><b><b>The Idaho Trail cuts though a wet grassland</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">31</div>
+            <img src="td19d12n2.jpg">
+            <div class="text"><b><b>Bill approaches on the rail trail</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">32</div>
+            <img src="td19d12n3.jpg">
+            <div class="text"><b><b>The Idaho Trail turns gorgeous</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">33</div>
+            <img src="td19d12n4.jpg">
+            <div class="text"><b><b>The western side of the Grand Tetons as viewed from
+    the end of the Squirrel Creek Lodge driveway</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">34</div>
+            <img src="td19d12n5.jpg">
+            <div class="text"><b><b>Welcome to Wyoming</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">35</div>
+            <img src="permethrin.jpg">
+            <div class="text"><b>pic 35</b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">36</div>
+            <img src="td19d12n6.jpg">
+            <div class="text"><b><b>Grassy Lake Reservoir</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">37</div>
+            <img src="td19d12n7.jpg">
+            <div class="text"><b><b>Bikes wait patiently while we have dinner</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">38</div>
+            <img src="td19d13n2.jpg">
+            <div class="text"><b><b>Unsafe for travel</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">39</div>
+            <img src="td19d13n3.jpg">
+            <div class="text"><b><b>Signs near the pass</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">40</div>
+            <img src="td19d13n4.jpg">
+            <div class="text"><b><b>Bill starts the snow-covered jeep road</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">41</div>
+            <img src="td19d13n5.jpg">
+            <div class="text"><b><b>Mark with Larry and Mikki ahead walking over snow</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">42</div>
+            <img src="td19d13n6.jpg">
+            <div class="text"><b><b>Fantastic vistas from the jeep road</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">43</div>
+            <img src="td19d13n7.jpg">
+            <div class="text"><b><b>The jeep road got tricky</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">44</div>
+            <img src="td19d15n1.jpg">
+            <div class="text"><b><b>The sun sets on the great basin</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">45</div>
+            <img src="td19d15n3.jpg">
+            <div class="text"><b><b>Maxwell Southam on his way to a 2nd place finish among Tour Divide racers going south to north</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">46</div>
+            <img src="td19d15n2.jpg">
+            <div class="text"><b><b>Adam, Joseph and Max crush gravel south of the Wind River
+    Range</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">47</div>
+            <img src="td19d15n5.jpg">
+            <div class="text"><b><b>Camping on the Great Divide Basin</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">48</div>
+            <img src="td19d16n1.jpg">
+            <div class="text"><b><b>Dawn breaks in the Great Basin
+  about 36 miles from Atlantic City</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">49</div>
+            <img src="td19d16n2.jpg">
+            <div class="text"><b><b>The vastness of Great Basin
+  combined with heat and wind to make progress slow</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">50</div>
+            <img src="td19d16n3.jpg">
+            <div class="text"><b><b>After Warmsutter the wind and heat
+  continued even as the road stretched on forever</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">51</div>
+            <img src="Greater_Green_River_Basin_Map.jpg">
+            <div class="text"><b><b>Greater Green River Basin</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">52</div>
+            <img src="td19d16n4.jpg">
+            <div class="text"><b><b>Hills appeared as the route inched
+  closer to Colorado</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">53</div>
+            <img src="td19d16n5.jpg">
+            <div class="text"><b><b>A second night of camping in the
+    Great Basin</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">54</div>
+            <img src="td19d16n6.jpg">
+            <div class="text"><b><b>The second morning on the Great
+    Basin was spectacular</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">55</div>
+            <img src="td19bml.jpg">
+            <div class="text"><b><b>Kirsten takes great care of everyone</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">56</div>
+            <img src="td19d18n1.jpg">
+            <div class="text"><b><b>Stagecoach Reservoir</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">57</div>
+            <img src="td19d18n2.jpg">
+            <div class="text"><b><b>Stagecoach Reservoir Dam</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">59</div>
+            <img src="td19d19n1.jpg">
+            <div class="text"><b><b>Legion on the CDT Alternate Route</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">60</div>
+            <img src="td19d19n2.jpg">
+            <div class="text"><b><b>Stopped to eat after the river crossing</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">61</div>
+            <img src="td19d19n3.jpg">
+            <div class="text"><b><b>The glitter ball makes an appearance</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">62</div>
+            <img src="td19d19n4.jpg">
+            <div class="text"><b><b>On the way to Ute Pass</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">63</div>
+            <img src="td19d20n1.jpg">
+            <div class="text"><b><b>View from the climb to Boreas Pass</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">64</div>
+            <img src="td19d20n2.jpg">
+            <div class="text"><b><b>The train to Leadville once used this route</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">65</div>
+            <img src="td19d20n3.jpg">
+            <div class="text"><b><b>Felt relaxed at Boreas Pass</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">66</div>
+            <img src="td19d20n4.jpg">
+            <div class="text"><b><b>Randy Rice was looking for Billy who was looking for
+    something Hal dropped</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">67</div>
+            <img src="td19d20n5.jpg">
+            <div class="text"><b><b>The grassy vastness of South Park</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">68</div>
+            <img src="td19d20n6.jpg">
+            <div class="text"><b><b>Night fell on the mountains above Salida</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">69</div>
+            <img src="td19d21n1.jpg">
+            <div class="text"><b><b>View from the climb to Marshall Pass</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">70</div>
+            <img src="td19d21rtr.jpg">
+            <div class="text"><b><b>The rotating paceline in order, Adam, Joey, David, Dan
+    &amp; Jack on Ride the Rockies after topping Poncha
+    Pass</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">71</div>
+            <img src="td19d21n2.jpg">
+            <div class="text"><b><b>Jim was spotted on the road ahead</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">72</div>
+            <img src="td19d21n5.jpg">
+            <div class="text"><b><b>Big horn sheep in search of minerals or water</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">73</div>
+            <img src="td19d21n3.jpg">
+            <div class="text"><b><b>Jim grinds the gravel to Marshall pass</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">74</div>
+            <img src="td19d21n6j.jpg">
+            <div class="text"><b><b>Jim &amp; Mikki top Marshall Pass</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">75</div>
+            <img src="td19d21n8m.jpg">
+            <div class="text"><b><b>Mikki &amp; the author at Marshall Pass</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">76</div>
+            <img src="td19d21n4.jpg">
+            <div class="text"><b><b>Mikki charges up Marshall Pass</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">77</div>
+            <img src="td19d21n7.jpg">
+            <div class="text"><b><b>Mikki on the climb to Cochetopa Pass</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">78</div>
+            <img src="td19d22n1.jpg">
+            <div class="text"><b><b>As we approached the last town in Colorado, the first
+    sign for route since we started in Banff was
+    spotted</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">79</div>
+            <img src="td19d22n2.jpg">
+            <div class="text"><b><b>Mikki was happy to have Carnero Pass behind him</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">80</div>
+            <img src="td19d22n3.jpg">
+            <div class="text"><b><b>Del Norte could be seen in the valley below but it was
+    a longer ride than expected</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">81</div>
+            <img src="td19d22n4.jpg">
+            <div class="text"><b><b>Mick used trackleaders to track me down in Del
+    Norte</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">82</div>
+            <img src="td19d23n1.jpg">
+            <div class="text"><b><b>Several cars were stuck in the snow on Indiana
+    Pass</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">83</div>
+            <img src="td19d23n2.jpg">
+            <div class="text"><b><b>The view from the top of Indiana Pass.  Less snow here
+    than on the slopes of the climb.</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">84</div>
+            <img src="td19d23n3.jpg">
+            <div class="text"><b><b>Happy with the climb.</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">85</div>
+            <img src="td19d23n4.jpg">
+            <div class="text"><b><b>Lunch in a valley after the top of the pass.</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">86</div>
+            <img src="td19d23n5.jpg">
+            <div class="text"><b><b>More snow on the way down.</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">87</div>
+            <img src="td19d23n6.jpg">
+            <div class="text"><b><b>An easy walk over the snow with the bike on the
+    back</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">88</div>
+            <img src="td19d23coyote.jpg">
+            <div class="text"><b><b>A collared coyote meandered across the snow despite
+    all of the human activity</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">89</div>
+            <img src="td19d24n2.jpg">
+            <div class="text"><b><b>La Manga Pass, first thing in the morning</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">90</div>
+            <img src="td19d24n3.jpg">
+            <div class="text"><b><b>Mikki tops La Manga</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">91</div>
+            <img src="td19d24n4.jpg">
+            <div class="text"><b><b>Wild flowers and Mikki in the Carson NF</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">92</div>
+            <img src="td19d24n5.jpg">
+            <div class="text"><b><b>New Mexico -- the last state on the Tour Divide
+    route</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">93</div>
+            <img src="td19d24n6.jpg">
+            <div class="text"><b><b>View from the top of the steep rocky climb</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">94</div>
+            <img src="td19d24n7.jpg">
+            <div class="text"><b><b>Jim rides through a wilderness</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">95</div>
+            <img src="td19d24plugkit.jpg">
+            <div class="text"><b><b>Left to right, plugger, plugs and reamer</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">96</div>
+            <img src="td19d24plug.jpg">
+            <div class="text"><b><b>Tire plugged near the bead</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">97</div>
+            <img src="td19d24n8.jpg">
+            <div class="text"><b><b>Sean, Keri and the boys</b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">98</div>
+            <img src="td19d24n1.jpg">
+            <div class="text"><b><b>Evening view from the paved highway</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">99</div>
+            <img src="td19d24rtr.jpg">
+            <div class="text"><b><b>Allison, Joey, Mark &amp; Steve enjoyed potatoes in
+    2006</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">100</div>
+            <img src="td19d25n2.jpg">
+            <div class="text"><b><b>Syliva outside her snack shack</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">101</div>
+            <img src="td19d25n1.jpg">
+            <div class="text"><b><b>Vallecitos in the valley below</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">102</div>
+            <img src="td19d25n3.jpg">
+            <div class="text"><b><b>Merino t-shirt &amp; REI hiking shirt</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">103</div>
+            <img src="td19d26n2.jpg">
+            <div class="text"><b><b>The route included sand and slick rock</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">104</div>
+            <img src="td19d26n1.jpg">
+            <div class="text"><b><b>Miles of wonderful wilderness</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">105</div>
+            <img src="td19d26n3.jpg">
+            <div class="text"><b><b>Sealant thanks to the kind owner of the hardware
+    store</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">106</div>
+            <img src="td19d27n1.jpg">
+            <div class="text"><b><b></b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">107</div>
+            <img src="td19d27n2.jpg">
+            <div class="text"><b><b></b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">108</div>
+            <img src="td19d27n3.jpg">
+            <div class="text"><b><b></b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">109</div>
+            <img src="td19d28n1.jpg">
+            <div class="text"><b><b>Butte-a-full morning</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">110</div>
+            <img src="td19d28n2.jpg">
+            <div class="text"><b><b>Buttes stand tall out of Grants</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">111</div>
+            <img src="td19d28n3.jpg">
+            <div class="text"><b><b>Jim and I take a snack break</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">112</div>
+            <img src="td19d28n4.jpg">
+            <div class="text"><b><b>Toaster house exterior</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">113</div>
+            <img src="td19d28n5.jpg">
+            <div class="text"><b><b>Toaster house interior</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">114</div>
+            <img src="td19d28n6.jpg">
+            <div class="text"><b><b>Pie thanks to Pie-O-NEER Pies and Salsa
+	  Cycles</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">115</div>
+            <img src="td19d28n7.jpg">
+            <div class="text"><b><b>Pie Town</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">116</div>
+            <img src="td19d28n8.jpg">
+            <div class="text"><b><b>The Pie-O-Neer Pie people took good care of
+	  us</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">117</div>
+            <img src="td19d28n9.jpg">
+            <div class="text"><b><b>Evening approaches somewhere in the Gila
+	  National Forest</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">118</div>
+            <img src="td19d29sunrise.jpg">
+            <div class="text"><b><b>Sunrise</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">119</div>
+            <img src="td19d29n1.jpg">
+            <div class="text"><b><b>Jim makes final adjustments</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">120</div>
+            <img src="td19d29n2.jpg">
+            <div class="text"><b><b>Prickly Poppies lined the road leading away
+	  from camp</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">121</div>
+            <img src="td19d29n3.jpg">
+            <div class="text"><b><b>Beaverhead Work Center in the Gila NF</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">122</div>
+            <img src="td19d29n4.jpg">
+            <div class="text"><b><b>Rare wetland in the Gila</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">123</div>
+            <img src="td19d29n5.jpg">
+            <div class="text"><b><b>Century Plants in flower along the CDT</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">124</div>
+            <img src="td19d29n6.jpg">
+            <div class="text"><b><b>Long views as daylight begins to wane</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">125</div>
+            <img src="td19d30n1.jpg">
+            <div class="text"><b><b>Max</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">126</div>
+            <img src="td19d30n2.jpg">
+            <div class="text"><b><b>31 miles to go</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">127</div>
+            <img src="td19d30n3.jpg">
+            <div class="text"><b><b>Rolling up to the finish</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">128</div>
+            <img src="flyinghome.jpg">
+            <div class="text"><b><b>Flying to the finish</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">129</div>
+            <img src="td19d30n4.jpg">
+            <div class="text"><b><b>Mandatory photo, check</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">130</div>
+            <img src="td19d30n5.jpg">
+            <div class="text"><b><b>Learning how best to carry the bike paid
+	  off during Tour Divide</b></b></div>
+            </div>
+<div class="mySlides fade" align="center">
+            <div class="numbertext">131</div>
+            <img src="td19d30home.jpg">
+            <div class="text"><b>pic 131</b></div>
+            </div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+             <a class="next" onclick="plusSlides(1)">&#10095;</a>
+             </div>
+             <br>
+             <div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+<span class="dot" onclick="currentSlide(5)"></span>
+<span class="dot" onclick="currentSlide(6)"></span>
+<span class="dot" onclick="currentSlide(7)"></span>
+<span class="dot" onclick="currentSlide(8)"></span>
+<span class="dot" onclick="currentSlide(9)"></span>
+<span class="dot" onclick="currentSlide(10)"></span>
+<span class="dot" onclick="currentSlide(11)"></span>
+<span class="dot" onclick="currentSlide(12)"></span>
+<span class="dot" onclick="currentSlide(13)"></span>
+<span class="dot" onclick="currentSlide(14)"></span>
+<span class="dot" onclick="currentSlide(15)"></span>
+<span class="dot" onclick="currentSlide(16)"></span>
+<span class="dot" onclick="currentSlide(17)"></span>
+<span class="dot" onclick="currentSlide(18)"></span>
+<span class="dot" onclick="currentSlide(19)"></span>
+<span class="dot" onclick="currentSlide(20)"></span>
+<span class="dot" onclick="currentSlide(21)"></span>
+<span class="dot" onclick="currentSlide(22)"></span>
+<span class="dot" onclick="currentSlide(23)"></span>
+<span class="dot" onclick="currentSlide(24)"></span>
+<span class="dot" onclick="currentSlide(25)"></span>
+<span class="dot" onclick="currentSlide(26)"></span>
+<span class="dot" onclick="currentSlide(27)"></span>
+<span class="dot" onclick="currentSlide(28)"></span>
+<span class="dot" onclick="currentSlide(29)"></span>
+<span class="dot" onclick="currentSlide(30)"></span>
+<span class="dot" onclick="currentSlide(31)"></span>
+<span class="dot" onclick="currentSlide(32)"></span>
+<span class="dot" onclick="currentSlide(33)"></span>
+<span class="dot" onclick="currentSlide(34)"></span>
+<span class="dot" onclick="currentSlide(35)"></span>
+<span class="dot" onclick="currentSlide(36)"></span>
+<span class="dot" onclick="currentSlide(37)"></span>
+<span class="dot" onclick="currentSlide(38)"></span>
+<span class="dot" onclick="currentSlide(39)"></span>
+<span class="dot" onclick="currentSlide(40)"></span>
+<span class="dot" onclick="currentSlide(41)"></span>
+<span class="dot" onclick="currentSlide(42)"></span>
+<span class="dot" onclick="currentSlide(43)"></span>
+<span class="dot" onclick="currentSlide(44)"></span>
+<span class="dot" onclick="currentSlide(45)"></span>
+<span class="dot" onclick="currentSlide(46)"></span>
+<span class="dot" onclick="currentSlide(47)"></span>
+<span class="dot" onclick="currentSlide(48)"></span>
+<span class="dot" onclick="currentSlide(49)"></span>
+<span class="dot" onclick="currentSlide(50)"></span>
+<span class="dot" onclick="currentSlide(51)"></span>
+<span class="dot" onclick="currentSlide(52)"></span>
+<span class="dot" onclick="currentSlide(53)"></span>
+<span class="dot" onclick="currentSlide(54)"></span>
+<span class="dot" onclick="currentSlide(55)"></span>
+<span class="dot" onclick="currentSlide(56)"></span>
+<span class="dot" onclick="currentSlide(57)"></span>
+<span class="dot" onclick="currentSlide(58)"></span>
+<span class="dot" onclick="currentSlide(59)"></span>
+<span class="dot" onclick="currentSlide(60)"></span>
+<span class="dot" onclick="currentSlide(61)"></span>
+<span class="dot" onclick="currentSlide(62)"></span>
+<span class="dot" onclick="currentSlide(63)"></span>
+<span class="dot" onclick="currentSlide(64)"></span>
+<span class="dot" onclick="currentSlide(65)"></span>
+<span class="dot" onclick="currentSlide(66)"></span>
+<span class="dot" onclick="currentSlide(67)"></span>
+<span class="dot" onclick="currentSlide(68)"></span>
+<span class="dot" onclick="currentSlide(69)"></span>
+<span class="dot" onclick="currentSlide(70)"></span>
+<span class="dot" onclick="currentSlide(71)"></span>
+<span class="dot" onclick="currentSlide(72)"></span>
+<span class="dot" onclick="currentSlide(73)"></span>
+<span class="dot" onclick="currentSlide(74)"></span>
+<span class="dot" onclick="currentSlide(75)"></span>
+<span class="dot" onclick="currentSlide(76)"></span>
+<span class="dot" onclick="currentSlide(77)"></span>
+<span class="dot" onclick="currentSlide(78)"></span>
+<span class="dot" onclick="currentSlide(79)"></span>
+<span class="dot" onclick="currentSlide(80)"></span>
+<span class="dot" onclick="currentSlide(81)"></span>
+<span class="dot" onclick="currentSlide(82)"></span>
+<span class="dot" onclick="currentSlide(83)"></span>
+<span class="dot" onclick="currentSlide(84)"></span>
+<span class="dot" onclick="currentSlide(85)"></span>
+<span class="dot" onclick="currentSlide(86)"></span>
+<span class="dot" onclick="currentSlide(87)"></span>
+<span class="dot" onclick="currentSlide(88)"></span>
+<span class="dot" onclick="currentSlide(89)"></span>
+<span class="dot" onclick="currentSlide(90)"></span>
+<span class="dot" onclick="currentSlide(91)"></span>
+<span class="dot" onclick="currentSlide(92)"></span>
+<span class="dot" onclick="currentSlide(93)"></span>
+<span class="dot" onclick="currentSlide(94)"></span>
+<span class="dot" onclick="currentSlide(95)"></span>
+<span class="dot" onclick="currentSlide(96)"></span>
+<span class="dot" onclick="currentSlide(97)"></span>
+<span class="dot" onclick="currentSlide(98)"></span>
+<span class="dot" onclick="currentSlide(99)"></span>
+<span class="dot" onclick="currentSlide(100)"></span>
+<span class="dot" onclick="currentSlide(101)"></span>
+<span class="dot" onclick="currentSlide(102)"></span>
+<span class="dot" onclick="currentSlide(103)"></span>
+<span class="dot" onclick="currentSlide(104)"></span>
+<span class="dot" onclick="currentSlide(105)"></span>
+<span class="dot" onclick="currentSlide(106)"></span>
+<span class="dot" onclick="currentSlide(107)"></span>
+<span class="dot" onclick="currentSlide(108)"></span>
+<span class="dot" onclick="currentSlide(109)"></span>
+<span class="dot" onclick="currentSlide(110)"></span>
+<span class="dot" onclick="currentSlide(111)"></span>
+<span class="dot" onclick="currentSlide(112)"></span>
+<span class="dot" onclick="currentSlide(113)"></span>
+<span class="dot" onclick="currentSlide(114)"></span>
+<span class="dot" onclick="currentSlide(115)"></span>
+<span class="dot" onclick="currentSlide(116)"></span>
+<span class="dot" onclick="currentSlide(117)"></span>
+<span class="dot" onclick="currentSlide(118)"></span>
+<span class="dot" onclick="currentSlide(119)"></span>
+<span class="dot" onclick="currentSlide(120)"></span>
+<span class="dot" onclick="currentSlide(121)"></span>
+<span class="dot" onclick="currentSlide(122)"></span>
+<span class="dot" onclick="currentSlide(123)"></span>
+<span class="dot" onclick="currentSlide(124)"></span>
+<span class="dot" onclick="currentSlide(125)"></span>
+<span class="dot" onclick="currentSlide(126)"></span>
+<span class="dot" onclick="currentSlide(127)"></span>
+<span class="dot" onclick="currentSlide(128)"></span>
+<span class="dot" onclick="currentSlide(129)"></span>
+<span class="dot" onclick="currentSlide(130)"></span>
+<span class="dot" onclick="currentSlide(131)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
+

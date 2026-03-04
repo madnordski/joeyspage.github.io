@@ -1,0 +1,95 @@
+.mstheme
+{
+	separator-image: url(blesepa.gif);
+	list-image-1: url(blebul1a.gif);
+	list-image-2: url(blebul2a.gif);
+	list-image-3: url(blebul3a.gif);
+	nav-banner-image: url(rtr2002logo.gif);
+	navbutton-horiz-normal: url(blenavha.gif);
+	navbutton-horiz-hovered: url(blenavhh.gif);
+	navbutton-horiz-pushed: url(blenavhs.gif);
+	navbutton-vert-normal: url(blenavva.gif);
+	navbutton-vert-hovered: url(blenavvh.gif);
+	navbutton-vert-pushed: url(blenavvs.gif);
+	navbutton-home-normal: url(blehomea.gif);
+	navbutton-home-hovered: url(blehomeh.gif);
+	navbutton-home-pushed: url(blehomep.gif);
+	navbutton-next-normal: url(blenexta.gif);
+	navbutton-next-hovered: url(blenexth.gif);
+	navbutton-next-pushed: url(blenextp.gif);
+	navbutton-prev-normal: url(blebacka.gif);
+	navbutton-prev-hovered: url(blebackh.gif);
+	navbutton-prev-pushed: url(blebackp.gif);
+	navbutton-up-normal: url(bleupa.gif);
+	navbutton-up-hovered: url(bleuph.gif);
+	navbutton-up-pushed: url(bleupp.gif);
+}
+.mstheme-bannertxt
+{
+	font-family: Trebuchet MS, Arial, Helvetica;
+	color: rgb(0, 0, 128);
+	font-size: 6;
+	font-style: normal;
+	font-weight: normal;
+}
+.mstheme-horiz-navtxt
+{
+	font-family: Verdana, Arial, Helvetica;
+	color: rgb(0, 0, 0);
+	font-size: 2;
+	font-style: normal;
+	font-weight: bold;
+}
+.mstheme-vert-navtxt
+{
+	font-family: Verdana, Arial, Helvetica;
+	color: rgb(0, 0, 0);
+	font-size: 2;
+	font-style: normal;
+	font-weight: bold;
+	text-align: right;
+}
+.mstheme-navtxthome
+{
+	font-family: Trebuchet MS, Arial, Helvetica;
+	color: rgb(255, 204, 0);
+	font-size: 1;
+	font-style: normal;
+	font-weight: normal;
+}
+.mstheme-navtxtnext
+{
+	font-family: Trebuchet MS, Arial, Helvetica;
+	color: rgb(255, 204, 0);
+	font-size: 1;
+	font-style: normal;
+	font-weight: normal;
+}
+.mstheme-navtxtprev
+{
+	font-family: Trebuchet MS, Arial, Helvetica;
+	color: rgb(255, 204, 0);
+	font-size: 1;
+	font-style: normal;
+	font-weight: normal;
+}
+.mstheme-navtxtup
+{
+	font-family: Trebuchet MS, Arial, Helvetica;
+	color: rgb(255, 204, 0);
+	font-size: 1;
+	font-style: normal;
+	font-weight: normal;
+}
+ul
+{
+	list-style-image: url(blebul1a.gif);
+}
+ul ul
+{
+	list-style-image: url(blebul2a.gif);
+}
+ul ul ul
+{
+	list-style-image: url(blebul3a.gif);
+}

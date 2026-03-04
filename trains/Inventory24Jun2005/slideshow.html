@@ -1,0 +1,108 @@
+<html>
+<head>
+<script language=JavaScript>
+var file = new Array();
+file[0] = "images/AMTdiner.jpg";
+file[1] = "images/AMTset1.jpg";
+file[2] = "images/AMTset2.jpg";
+file[3] = "images/IceHouse.jpg";
+file[4] = "images/L-WorkCar.jpg";
+file[5] = "images/L1110.jpg";
+file[6] = "images/L16016set1.jpg";
+file[7] = "images/L16016set2.jpg";
+file[8] = "images/L16016set3.jpg";
+file[9] = "images/L16016set4.jpg";
+file[10] = "images/L16019.jpg";
+file[11] = "images/L16619.jpg";
+file[12] = "images/L17009.jpg";
+file[13] = "images/L174530.jpg";
+file[14] = "images/L1866.jpg";
+file[15] = "images/L1882.jpg";
+file[16] = "images/L19823.jpg";
+file[17] = "images/L2055.jpg";
+file[18] = "images/L210.jpg";
+file[19] = "images/L2333.jpg";
+file[20] = "images/L2348.jpg";
+file[21] = "images/L2460.jpg";
+file[22] = "images/L2460wUtility.jpg";
+file[23] = "images/L3351.jpg";
+file[24] = "images/L3462.jpg";
+file[25] = "images/L3462a1.jpg";
+file[26] = "images/L3462a2.jpg";
+file[27] = "images/L50.jpg";
+file[28] = "images/L520.jpg";
+file[29] = "images/L55.jpg";
+file[30] = "images/L58pw.jpg";
+file[31] = "images/L6003.jpg";
+file[32] = "images/L6080bc.jpg";
+file[33] = "images/L6080l.jpg";
+file[34] = "images/L6080set.jpg";
+file[35] = "images/L6080set1.jpg";
+file[36] = "images/L6083.jpg";
+file[37] = "images/L6086.jpg";
+file[38] = "images/L6112.jpg";
+file[39] = "images/L6462.jpg";
+file[40] = "images/L6465.jpg";
+file[41] = "images/L6520.jpg";
+file[42] = "images/L671.jpg";
+file[43] = "images/L7420.jpg";
+file[44] = "images/L8770.jpg";
+file[45] = "images/L8922.jpg";
+file[46] = "images/M490.jpg";
+file[47] = "images/MTH-CV.jpg";
+file[48] = "images/pipeco.jpg";
+file[49] = "images/SawMill.jpg";
+file[50] = "images/struct001.jpg";
+file[51] = "images/struct002.jpg";
+file[52] = "images/struct003.jpg";
+file[53] = "images/struct004.jpg";
+file[54] = "images/struct005.jpg";
+file[55] = "images/struct008.jpg";
+file[56] = "images/struct009.jpg";
+file[57] = "images/struct010.jpg";
+var i = 0;
+var n = 58;
+var timer=null;
+var delay=3500;
+
+function autoAdvance() {
+  showSlide(i+1);
+  timer = window.setTimeout('autoAdvance()', delay);
+}
+
+function showSlide(slideNumber) {
+  i = slideNumber;
+  if (i>=n) i=0;
+  if (i<0) i=n-1;
+  document.slide.src=file[i];
+}
+
+function advance(direction) {
+  window.clearTimeout(timer);
+  showSlide(i+direction);
+}
+
+</script>
+<title>Slide Show</title>
+</head>
+
+<body bgcolor="black" color="white" onload="document.slide.src=file[0];">
+<center>
+<img name="slide" src="" width=870 height=653>
+<form>
+  <input type=button name="First" value="First"
+         onclick="advance(n);">
+  <input type=button name="Previous" value="Previous"
+         onclick="advance(-1);">
+  <input type=button name="Next" value="Next"
+         onclick="advance(1);">
+  <input type=button name="Last" value="Last"
+         onclick="advance(-n);">&nbsp;|&nbsp;
+  <input type=button name="Auto" value="Auto Advance"
+         onclick="autoAdvance();">
+  <input type=button name="Close" value="Close"
+         onclick="self.close();">
+</form>
+</center>
+</body>
+</html>
