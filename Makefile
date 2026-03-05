@@ -16,7 +16,7 @@ init:
 whatlocks:
 	@if [ -d .git ]; then \
 		git ls-files -m \
-			| sed 's/^/file: /; s/$$/ locked by: modified/'; \
+			| sed 's/^/file: /; s/$$/ git status: modified/'; \
 		git diff --name-only --cached \
 			| sed 's/^/file: /; s/$$/ git status: staged/'; \
 		if git rev-parse --verify HEAD@{upstream} >/dev/null 2>&1; \
