@@ -6,6 +6,7 @@ push:
 	git add -A
 	git commit -m "Update site: $(shell date)" || true
 	@git --no-pager show --name-status --oneline -1
+	git pull --rebase origin main
 	git push origin main
 
 init:
