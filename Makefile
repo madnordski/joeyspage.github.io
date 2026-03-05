@@ -1,18 +1,25 @@
 
-.PHONY: whatlocks push init
+.PHONY: whatlocks begin end status
 
-push:
-	@git rev-parse --is-inside-work-tree >/dev/null
+begin:
+	@git rev-parse --is-inside-work-tree >/dev/null || \
+	 (echo "Not inside a git repo"; exit 1)
+	git fetch origin
+	git pull --rebase origin main
+	@echo "Session started: repo synced."
+
+end:
 	git add -A
-	git commit -m "Update site: $(shell date)" || true
-	@git --no-pager show --name-status --oneline -1
+	git diff --quiet && git diff --cached --quiet || \
+	 git commit -m "Session Update: $(shell date)"
 	git pull --rebase origin main
 	git push origin main
+	@echo "Session ended: changes pushed."
 
-init:
-	git init
-	git branch -M main
-	-git remote add origin git@github.com:madnordski/joeyspage.github.io.git
+status:
+	git fetch origin
+	git status
+	git diff main origin/main --stat
 
 whatlocks:
 	@if [ -d .git ]; then \
