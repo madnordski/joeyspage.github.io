@@ -56,7 +56,11 @@
             <!-- To add more poems, just copy a button line and change the file path -->
             <button class="launch-btn" onclick="viewPoem('Absurd7.html')">Absurd 7</button>
             <button class="launch-btn" onclick="viewPoem('AI_Validation.html')">AI Validation</button>
-	    <button class="launch-btn" onclick="viewPoem('No_Place.html', 692)">No Place</button>
+	    <div style="font-family: 'Georgia', serif; font-size: 0.85rem;">
+		<a href="#" onclick="viewAudio('AI_Validation.mp3'); return false;" style="color: #6b6359; text-decoration: underline;">Listen to Audio</a>
+		<button class="launch-btn" onclick="viewPoem('No_Place.html', 692)">No Place</button>
+		<div style="font-family: 'Georgia', serif; font-size: 0.85rem;">
+		    <a href="#" onclick="viewAudio('No_Place.mp3'); return false;" style="color: #6b6359; text-decoration: underline;">Listen to Audio</a>
 
             <!-- Example of future additions: -->
             <!-- <button class="launch-btn" onclick="viewPoem('another_poem.html')">Another Poem</button> -->
@@ -77,6 +81,55 @@
              // Opens the external file inside the configured popup window
              window.open(url, "_blank", windowFeatures);
          }
+
+	 function viewAudio(url) {
+	     // A small compact width and height just for the standard browser audio bar
+	     const width = 380;
+	     const height = 120;
+	     
+	     // Position calculations to center the audio bar on your monitor
+	     const left = (window.screen.width / 2) - (width / 2);
+	     const top = (window.screen.height / 2) - (height / 2);
+	     
+	     const windowFeatures = `width=${width},height=${height},left=${left},top=${top},menubar=no,toolbar=no,location=no,status=no,resizable=no,scrollbars=no`;
+	     
+	     // Open a blank popup window instance
+	     const audioWindow = window.open("", "_blank", windowFeatures);
+	     
+	     // Inject a clean HTML fragment containing the native player centered perfectly
+	     audioWindow.document.write(`
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Audio Player</title>
+            <style>
+                body {
+                    background-color: #fcfbfa;
+                    margin: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;
+                    box-sizing: border-box;
+                }
+                audio {
+                    width: 320px;
+                }
+            </style>
+        </head>
+        <body>
+            <!-- The autoplay attribute attempts to start playing immediately on click -->
+            <audio controls autoplay>
+                <source src="${url}" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </body>
+        </html>
+	     `);
+	     audioWindow.document.close();
+	 }
+
 	</script>
 
     </body>
