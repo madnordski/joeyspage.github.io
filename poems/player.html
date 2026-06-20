@@ -1,0 +1,12 @@
+<audio id="player" controls autoplay></audio>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const player = document.getElementById("player");
+
+player.src = params.get("file");
+
+window.onload = () => {
+    player.play();
+};
+</script>
