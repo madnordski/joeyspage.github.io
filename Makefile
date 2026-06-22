@@ -35,3 +35,10 @@ whatlocks:
 	else \
 		echo "Not a git repository"; \
 	fi
+
+save_me:
+	@echo "Wiping local deployment history and syncing with GitHub..."
+	git fetch origin
+	git reset --hard origin/main
+	git clean -fd
+	@echo "Done! Your deployment tree is clean. You can run 'make' again."
