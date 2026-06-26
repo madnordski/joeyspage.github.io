@@ -14,6 +14,8 @@ end:
 	 git commit -m "Session Update: $(shell date)"
 	git pull --rebase origin main
 	git push origin main
+	@echo "\n--- Files Changed in This Push ---"
+	@git log -1 --stat --oneline
 	@echo "Session ended: changes pushed."
 
 status:
