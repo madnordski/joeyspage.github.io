@@ -56,9 +56,11 @@
             <!-- To add more podcasts, change the file path -->
 	    <div style="font-family: 'Georgia', serif; font-size: 0.85rem;">
 		<button class="launch-btn"
-			onclick="viewAudio('Teaser01.mp3')">Listen to Teaser 1</button>
+			       onclick="viewAudio('Teaser01.mp3')">Listen to Teaser 1</button>
 		<button class="launch-btn"
-			onclick="viewAudio('TIV_Episode01audio.mp3');">Listen to Episode 1</button>
+			       onclick="viewAudio('Tuesday.mp3')">Listen to Tuesday</button>
+		<button class="launch-btn"
+			       onclick="viewAudio('TIV_Episode01audio.mp3');">Listen to Episode 1</button>
 		<button class="launch-btn"
 			       onclick="viewAudio('TIV_Ep02.mp3');">Listen to Episode 2</button>
 		<button class="launch-btn"
@@ -71,14 +73,14 @@
 	<script>
 	 function viewAudio(url) {
 	     // A small compact width and height just for the standard browser audio bar
-	     const width = 720;
-	     const height = 210;
+	     const width = window.innerWidth * 0.9;
+	     const height = 300;
 	     
 	     // Position calculations to center the audio bar on your monitor
 	     const left = (window.screen.width / 2) - (width / 2);
 	     const top = (window.screen.height / 2) - (height / 2);
 	     
-	     const windowFeatures = `width=${width},height=${height},left=${left},top=${top},menubar=no,toolbar=no,location=no,status=no,resizable=no,scrollbars=no`;
+	     const windowFeatures = `width=${width},height=${height},left=${left},top=${top},menubar=no,toolbar=no,location=no,status=no,resizable=yes,scrollbars=no`;
 	     
 	     // Open a blank popup window instance
 	     window.open("player.html?file=" + encodeURIComponent(url),
