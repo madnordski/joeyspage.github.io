@@ -1,12 +1,23 @@
+<style>
+ body {
+     margin: 0;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     background-color: #f4f1ea;
+ }
+ #player {
+     width: 90%; /* Makes it fill most of the screen width */
+     max-width: 600px;
+ }
+</style>
+
 <audio id="player" controls autoplay></audio>
 
 <script>
-const params = new URLSearchParams(window.location.search);
-const player = document.getElementById("player");
-
-player.src = params.get("file");
-
-window.onload = () => {
-    player.play();
-};
+ const params = new URLSearchParams(window.location.search);
+ const player = document.getElementById("player");
+ player.src = params.get("file");
 </script>
